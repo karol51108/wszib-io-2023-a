@@ -17,13 +17,13 @@ class Trojkaty {
     else{
     if(a+b > c && a+c > b && b+c > a){
     
-         if (a == b && b == c && a == c) {
+         if (a == b && b == c) {
              System.out.print("Trójkąt równoboczny"); 
          }
          else if (a==b || b==c || c==a){
             System.out.print("Trojkat rownoramienny");
          }
-         else if (a != b && b != c && c != a){
+         else if (a != b && b != c){
             System.out.print("Trojkat roznoboczny");
          }
         
