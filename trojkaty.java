@@ -12,12 +12,12 @@ class Trojkaty {
     public static void jakiTrojkat(float a, float b, float c){
 
     if(a==0|b==0|c==0){
-    	System.out.println("Dlugosci bokow nie moga byc ujemne")
+    	System.out.println("Dlugosci bokow nie moga byc ujemne");
     }
     else{
     if(a+b > c && a+c > b && b+c > a){
     
-         if (a == b && b == c) {
+         if (a == b && a == c) {
              System.out.print("Trójkąt równoboczny"); 
          }
          else if (a==b || b==c || c==a){
