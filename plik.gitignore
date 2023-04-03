@@ -1,0 +1,4 @@
+#ignore all logs
+	*.log
+#ignore file Trojkaty.class
+	Trojkaty.class
