@@ -9,6 +9,19 @@ class Trojkaty {
      * @param {float} b - Długość drugiego boku.
      * @param {float} c - Długość trzeciego boku.
      */
+
+	public static int ileJednakowych(float a, float b, float c){
+                   int jednakowe = 0; // tutaj zliczamy ile jest jednakowych bokow
+                   if (a == b) {
+                      jednakowe++;
+                   }
+                   if (b == c) {
+                      jednakowe++;
+                   }
+                   return jednakowe;
+               }
+
+
     public static void jakiTrojkat(float a, float b, float c){
 
     if(a==0|b==0|c==0){
@@ -46,7 +59,7 @@ class Trojkaty {
     public static void pomoc(){
         System.out.println("Acme INC. (C) 2022");
         System.out.println("Program do rozpoznawania rodzaju trójkąta");
-        System.out.println("Uruchom z trzema argumentami liczbowymi - długość boków trójkąta");
+        System.out.println("Uruchom z trzema argumentami liczbowymi - długości boków trójkąta");
     }
     /** Glowna funkcja */
     public static void main(String... args) {
