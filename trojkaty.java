@@ -42,11 +42,19 @@ class Trojkaty {
      }
          }
     }
+
+public static boolean czyIstniejeTrojkat(float a, float b, float c){
+                  if (a + b <= c) return false;
+                  if (a + c <= b) return false;
+                  if (b + c <= a) return false;
+                  return true;
+               }
+
     /** Wyświetla ekran pomocy */
     public static void pomoc(){
         System.out.println("Acme INC. (C) 2022");
         System.out.println("Program do rozpoznawania rodzaju trójkąta");
-        System.out.println("Uruchom z trzema argumentami liczbowymi - długość boków trójkąta");
+        System.out.println("Uruchom z trzema argumentami liczbowymi - długości boków trójkąta");
     }
     /** Glowna funkcja */
     public static void main(String... args) {
